@@ -10,7 +10,7 @@ days = {
     6: 'Sunday'
 }
 
-year = 1992
+year = int(input())
 if year % 4 == 0:
     extra_date = datetime.datetime.strptime('29-02-{}'.format(year), '%d-%m-%Y')
     day = extra_date.weekday()
